@@ -12,21 +12,25 @@ function maxOfTwoNumbers(number1, number2) {
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-let arrayVacio = [];
-let arrayFoo = ['foo'];
-
-function findLongestWord() {
-  if (!arrayVacio.length) {
+function findLongestWord(arr) {
+  let arrayVacio = [];
+  if (!arr.length) {
     return null;
-  } else if ((arrayFoo.length = 1)) {
-    return arrayFoo;
   }
+  if (arr.length === 1) {
+    return arr[0];
+  }
+  if (arr) return arr.findLongestWord[0];
 }
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(numbers) {
+  if (!numbers.length) {
+    return 0;
+  }
+}
 
 // Iteration #3.1 Bonus:
 function sum() {}
@@ -35,12 +39,20 @@ function sum() {}
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbersAvg) {
+  if (numbersAvg.length === 0) {
+    return null;
+  }
+}
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() {}
+function averageWordLength(wordsArr) {
+  if (!wordsArr.length) {
+    return null;
+  }
+}
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -60,12 +72,20 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(wordsUnique) {
+  if (!wordsUnique.length) {
+    return null;
+  }
+}
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(wordsFind) {
+  if (wordsFind.length === 0) {
+    return null;
+  }
+}
 
 // Iteration #7: Count repetition
 const wordsCount = [
@@ -82,7 +102,11 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(wordsCount) {
+  if (wordsCount.length === 0) {
+    return 0;
+  }
+}
 
 // Iteration #8: Bonus
 const matrix = [
